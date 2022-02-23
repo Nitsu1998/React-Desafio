@@ -3,7 +3,9 @@ import NavBar from "./NavBar";
 function Header() {
   return (
     <>
-      <NavBar />
+      <header id="main-header">
+        <NavBar />
+      </header>
     </>
   )
 }
