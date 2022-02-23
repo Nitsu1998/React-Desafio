@@ -1,5 +1,5 @@
 function NavBar() {
-  return "Hola"
+  return "Hola Mundo"
 }
 
 export default NavBar;
