@@ -1,31 +1,29 @@
-function NavBar() {
+export default function NavBar() {
   return (
     <>
-      <div id="tittle">
-        <h1> RICK & MORTY NFT SHOP </h1>
-      </div>
-
       <div id="nav">
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="/#">Top Sells</a>
           </li>
           <li>
-            <a href="#">Top Sells</a>
+            <a href="/#">My NFT</a>
           </li>
           <li>
-            <a href="#">My NFT</a>
+            <a href="/#">About Us</a>
           </li>
           <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
+            <a href="/#">Contact</a>
           </li>
         </ul>
+        
+        <div>
+          {/* <button>SING IN</button>
+          <button>SIGN UP</button>
+          <CartWidget /> */}
+        </div>
       </div>
     </>
   );
 }
 
-export default NavBar;

@@ -1,13 +1,14 @@
 import NavBar from "./NavBar";
 
-function Header() {
+export default function Header() {
   return (
     <>
-      <header id="main-header">
+      <header id="header">
+        <div id="tittle">
+          <h1> RICK & MORTY</h1>
+        </div>
         <NavBar />
       </header>
     </>
-  )
+  );
 }
-
-export default Header;
