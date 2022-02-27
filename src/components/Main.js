@@ -1,16 +1,13 @@
-import Greeter from "../img/background.png"
+import ItemListContainer from "./ItemListContainer";
 
 export default function Main() {
   return (
     <>
       <main id="main">
-            <img src={Greeter} alt="" />
-            <div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </div>
+        <div id="welcome">
+          <ItemListContainer greeting="Welcome Back!" />
+        </div>
       </main>
     </>
   );
 }
-
-

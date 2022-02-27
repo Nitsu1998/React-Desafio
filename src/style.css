@@ -22,7 +22,7 @@
 }
 
 #nav {
-    text-align: center;
+    align-items: center;
     display: flex;
 }
 
@@ -40,10 +40,42 @@
     font-weight: bold;
     text-decoration: none;
     font-size: 1rem;
-    padding: 18px;
+    padding: 1rem;
 }
 
 #nav ul li a:hover {
     color: #7DCD36
 }
 
+#nav-sign button {
+    color: #212124;
+    font-size: 0.9rem;
+    background-color: #13C1D8; 
+    font-weight: bold;
+    border: none;
+    padding: 0.2rem;
+    margin: 0.3rem;
+    border-radius: 0.4rem;
+    border: 1px solid transparent;
+}
+
+#nav-sign button:hover {
+    background-color: #212124;
+    color: #7DCD36;
+    border: 1px solid #13C1D8;
+}
+
+
+/* Main */
+
+#welcome {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+main {
+    background-image: url(./img/background.png);
+    height: 100vh;
+    
+}

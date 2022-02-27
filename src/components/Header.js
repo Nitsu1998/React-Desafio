@@ -5,7 +5,7 @@ export default function Header() {
     <>
       <header id="header">
         <div id="tittle">
-          <h1> RICK & MORTY</h1>
+          <h1>RICK & MORTY</h1>
         </div>
         <NavBar />
       </header>
