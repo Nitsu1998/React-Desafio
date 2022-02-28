@@ -1,5 +1,3 @@
-import CartWidget from "./CartWidget.js";
-
 export default function NavBar() {
   return (
     <>
@@ -18,12 +16,6 @@ export default function NavBar() {
             <a href="/#">Contact</a>
           </li>
         </ul>
-
-        <div id="nav-sign">
-          <button>SIGN IN</button>
-          <button>SIGN UP</button>
-          <CartWidget />
-        </div>
       </div>
     </>
   );
