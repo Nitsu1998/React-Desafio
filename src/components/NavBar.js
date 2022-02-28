@@ -7,7 +7,7 @@ export default function NavBar() {
             <a href="/#">Top Sells</a>
           </li>
           <li>
-            <a href="/#">My NFT</a>
+            <a href="/#">My Collection</a>
           </li>
           <li>
             <a href="/#">About Us</a>
