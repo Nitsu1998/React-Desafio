@@ -1,24 +1,24 @@
 import prueba from "../img/rickTrono.png";
 import { useState } from "react";
 
-export default function ItemCount(props) {
-  const [amount, setAmount] = useState(props.initial);
+export default function ItemCount({initial, stock}) {
+  const [amount, setAmount] = useState(initial);
 
   const decrease = () => {
-    if (amount !== 1) {
+    if (amount > initial) {
       setAmount(amount - 1);
     }
   };
 
   const increase = () => {
-    if (amount !== props.stock) {
+    if (amount < stock) {
       setAmount(amount + 1);
     }
   };
 
   const meOnAdd = () => {
     console.log("Se agrego %d item al carrito", amount);
-    setAmount(props.initial);
+    setAmount(initial);
   };
 
   return (
@@ -30,7 +30,7 @@ export default function ItemCount(props) {
           <p id="amount">{amount}</p>
           <button onClick={increase}>+</button>
         </div>
-        <p id="stockAvailable">Available: {props.stock}</p>
+        <p id="stockAvailable">Available: {stock}</p>
         <div id="addCart">
           <button onClick={meOnAdd}>Add to cart</button>
         </div>
