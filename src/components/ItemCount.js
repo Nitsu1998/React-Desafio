@@ -17,7 +17,7 @@ export default function ItemCount(props) {
   };
 
   const meOnAdd = () => {
-    console.log("Se agrego %d items al carrito", amount);
+    console.log("Se agrego %d item al carrito", amount);
     setAmount(props.initial);
   };
 
@@ -25,7 +25,7 @@ export default function ItemCount(props) {
     <>
       <div id="item">
         <img src={prueba} alt="" />
-        <div id="product">
+        <div id="selector">
           <button onClick={decrease}>-</button>
           <p id="amount">{amount}</p>
           <button onClick={increase}>+</button>
