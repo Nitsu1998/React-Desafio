@@ -2,35 +2,36 @@ import prueba from "../img/rickTrono.png";
 import { useState } from "react";
 
 export default function ItemCount(props) {
-  const [cantidad, setCantidad] = useState(props.initial);
+  const [amount, setAmount] = useState(props.initial);
 
-  const disminuir = () => {
-    if (cantidad !== 1) {
-      setCantidad(cantidad - 1);
+  const decrease = () => {
+    if (amount !== 1) {
+      setAmount(amount - 1);
     }
   };
 
-  const aumentar = () => {
-    if (cantidad !== props.stock) {
-      setCantidad(cantidad + 1);
+  const increase = () => {
+    if (amount !== props.stock) {
+      setAmount(amount + 1);
     }
   };
 
   const meOnAdd = () => {
-    setCantidad(props.initial);
+    console.log("Se agrego %d items al carrito", amount);
+    setAmount(props.initial);
   };
 
   return (
     <>
       <div id="item">
         <img src={prueba} alt="" />
-        <div id="producto">
-          <button onClick={disminuir}>-</button>
-          <p id="cantidad">{cantidad}</p>
-          <button onClick={aumentar}>+</button>
+        <div id="product">
+          <button onClick={decrease}>-</button>
+          <p id="amount">{amount}</p>
+          <button onClick={increase}>+</button>
         </div>
-        <p id="disponibles">Available: {props.stock}</p>
-        <div id="agregarCarrito">
+        <p id="stockAvailable">Available: {props.stock}</p>
+        <div id="addCart">
           <button onClick={meOnAdd}>Add to cart</button>
         </div>
       </div>
