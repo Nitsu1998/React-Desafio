@@ -1,6 +1,6 @@
+import logo from "../img/logo.png";
 import NavBar from "./NavBar";
 import CartWidget from "./CartWidget.js";
-import logo from "../img/logo.png"
 
 export default function Header() {
   return (
