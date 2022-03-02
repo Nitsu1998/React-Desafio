@@ -1,4 +1,3 @@
-import logo from "../img/logo.png";
 import NavBar from "./NavBar";
 import CartWidget from "./CartWidget.js";
 
@@ -7,7 +6,7 @@ export default function Header() {
     <>
       <header id="header">
         <div id="logo">
-          <img src={logo} alt="" />
+          <img src='/img/logo.png' alt="" />
         </div>
         <div id="title">
           <h1>RICK & MORTY</h1>

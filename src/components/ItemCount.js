@@ -1,4 +1,3 @@
-import prueba from "../img/rickTrono.png";
 import { useState } from "react";
 
 export default function ItemCount({initial, stock}) {
@@ -24,7 +23,7 @@ export default function ItemCount({initial, stock}) {
   return (
     <>
       <div id="item">
-        <img src={prueba} alt="" />
+        <img src='/img/rickTrono.png' alt="" />
         <div id="selector">
           <button onClick={decrease}>-</button>
           <p id="amount">{amount}</p>
