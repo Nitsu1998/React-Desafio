@@ -1,5 +1,7 @@
 import NavBar from "./NavBar";
 import CartWidget from "./CartWidget.js";
+import SignIn from "./SignIn";
+import SignUp from "./SignUp";
 
 export default function Header() {
   return (
@@ -13,9 +15,9 @@ export default function Header() {
         </div>
         <NavBar />
         <div id="sign">
-          <button>SIGN IN</button>
-          <button>SIGN UP</button>
-          <CartWidget />
+        <SignIn />
+        <SignUp />
+        <CartWidget />
         </div>
       </header>
     </>
