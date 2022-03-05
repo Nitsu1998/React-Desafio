@@ -94,25 +94,31 @@
   flex-wrap: wrap;
 }
 
-#item {
+#product {
   display: flex;
   flex-direction: column;
   text-align: center;
   color: #13c1d8;
   margin: 1.5rem 4rem 1rem 4rem;
-  border: 1px solid #13c1d8;
 }
 
-#infoItem {
+#product img {
+  border: 1px solid #212124;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+#infoProduct {
  background-color: #212124;
+ border-radius: 0rem 0rem 1rem 1rem;
+ border: 1px solid #13c1d8;
 }
 
-#infoItem h5 {
+#infoProduct h5 {
   margin-top: 1rem;
   color: grey;
 }
 
-#infoItem button {
+#infoProduct button {
   color: #212124;
   font-size: 0.9rem;
   background-color: #13c1d8;
@@ -124,7 +130,7 @@
   border: 1px solid transparent;
 }
 
-#infoItem button:hover {
+#infoProduct button:hover {
   background-color: #212124;
   color: #7dcd36;
   border: 1px solid #13c1d8;
