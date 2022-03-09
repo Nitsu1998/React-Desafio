@@ -22,7 +22,7 @@ export default function ItemListContainer() {
         });
 
     },2000)
-  },)
+  },[])
 
   return (
     <>
