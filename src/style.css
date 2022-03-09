@@ -81,7 +81,6 @@
 /* Main */
 
 #main {
-  height: 100vh;
   background-image: url(/public/img/background.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -209,6 +208,7 @@
     justify-content: center;
     position: relative;
     top: 3rem;
+    height: 100vh;
 }
 
 
