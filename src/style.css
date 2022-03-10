@@ -184,9 +184,9 @@
 #addCart button {
   font-size: 1rem;
   border-radius: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.3rem;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
   color: #212124;
   background-color: #13c1d8;
   border: 1px solid #13c1d8;
@@ -238,7 +238,6 @@
 #detailInfo span {
   color: grey
 }
-
 
 #loading{
     display: flex;
