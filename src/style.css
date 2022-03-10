@@ -126,13 +126,12 @@
   padding: 0.2rem;
   margin: 0.3rem;
   border-radius: 0.4rem;
-  border: 1px solid transparent;
+  border: 1px solid #13c1d8;
 }
 
 #infoProduct button:hover {
   background-color: #212124;
   color: #7dcd36;
-  border: 1px solid #13c1d8;
 }
 
 #productCounter {
@@ -142,35 +141,31 @@
 #counter {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #counter button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.5rem;
-  height: 1.65rem;
-  color: #10b0c8;
-  background-color: #212124;
-  border: none;
+  border-radius: 0.75rem;
+  padding: 0.6rem 0.75rem 0.6rem 0.75rem;
+  color: #212124;
+  background-color: #13c1d8;
   border: 1px solid #13c1d8;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.3rem;
 }
 
 #counter button:hover {
-  background-color: grey;
+  background-color: #212124;
+  color: #7dcd36;
 }
 
 #amount {
-  display: flex;
-  justify-content: center;
   font-weight: bold;
-  height: 1.5rem;
-  width: 4rem;
   border: 1px solid #13c1d8;
-  margin-bottom: 0.3rem;
+  margin: 0rem 0.75rem 0rem 0.75rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 1rem;
 }
 
 #stockAvailable {
@@ -189,17 +184,18 @@
 #addCart button {
   font-size: 1rem;
   border-radius: 1rem;
-  padding: 0.35rem;
   margin-top: 1rem;
   margin-bottom: 0.3rem;
-  color: #10b0c8;
-  background-color: #212124;
-  border: none;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  color: #212124;
+  background-color: #13c1d8;
   border: 1px solid #13c1d8;
+  font-weight: bold;
 }
 
 #addCart button:hover {
-  background-color: grey;
+  background-color:#212124;
+  color: #7dcd36;
 }
 
 #detailContainer{
@@ -219,6 +215,7 @@
 
 #detailInfo {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content:space-between;
   border-radius: 0rem 1rem 1rem 0rem;
@@ -230,11 +227,12 @@
 #detailInfo h2 {
   margin-bottom: 2rem;
   color: #13c1d8;
+  box-shadow: 0 2px #7dcd36;
 }
 
 #detailInfo ul {
   padding: 1rem;
-  color:#7dcd36;
+  color:#13c1d8;
 }
 
 #detailInfo span {

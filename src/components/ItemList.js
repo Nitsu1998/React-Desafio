@@ -1,11 +1,11 @@
 import Item from "./Item";
 
-export default function ItemList({items}) {
+export default function ItemList({products}) {
   return (
     <>
       <div id="productsContainer">
-        {items.map((item,index) => (
-          <Item key={index} item={item}/>
+        {products.map((product,index) => (
+          <Item key={index} product={product}/>
         ))}
       </div>
     </>

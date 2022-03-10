@@ -1,6 +1,6 @@
-export default function Item({item}) {
+export default function Item({product}) {
   
-  const {name, image, status, species} = item
+  const {name, image, status, species} = product
 
   const setPrice = () => {
     let price = 0

@@ -21,6 +21,9 @@ export default function ItemDetail({ product }) {
               <li>
                 Gender: <span>{gender}</span>
               </li>
+              <li>
+                Description: <span>Lorem ipsum dolor sit.</span>
+              </li>
             </ul>
             <ItemCount initial={1} stock={5} />
           </div>
