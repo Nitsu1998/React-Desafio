@@ -11,7 +11,7 @@ export default function ItemListContainer() {
     
     setTimeout(()=>{
 
-      fetch('https://rickandmortyapi.com/api/character/1,2,3,4,5,40,41,55,57,70,150,151')
+      fetch('https://rickandmortyapi.com/api/character/1,2,3,4,5,40,41,55,57,70,150,151,238,525,654')
       .then(response => response.json())
       .then(data => setProducts(data))
       .catch(() => {
@@ -26,9 +26,7 @@ export default function ItemListContainer() {
 
   return (
     <>
-      <main id="main">
         {loading ? <div id="loading"><ClipLoader color={"#13c1d8"} size={100} loading={loading} /></div> : <ItemList items={products} />}
-      </main>
     </>
   );
 }
