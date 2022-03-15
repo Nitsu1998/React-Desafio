@@ -20,7 +20,7 @@ export default function NavBar() {
               <NavLink to="/Species/Humanoid">Humanoid</NavLink>
             </li>
             <li>
-              <NavLink to="/Species/Mythological Creature">Mythological Creature</NavLink>
+              <NavLink to="/Species/Mythological-Creature">Mythological Creature</NavLink>
             </li>
           </ul>
         </div>
