@@ -280,6 +280,26 @@
   color: grey
 }
 
+#alive {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #7dcd36;
+  border-radius: 50%;
+  margin-left: 0.25rem;
+  margin-bottom: 0.1rem;
+}
+
+#dead {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #D63D2E;
+  border-radius: 50%;
+  margin-left: 0.25rem;
+  margin-bottom: 0.1rem;
+}
+
 #loading{
     display: flex;
     justify-content: center;

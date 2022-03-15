@@ -13,7 +13,7 @@ export default function ItemDetail({product}) {
             <ul>
               <h4>Information</h4>
               <li>
-                Status: <span>{status}</span>
+                Status: <span>{status}</span> <span id={status === "Alive" ? "alive" : "dead"}></span>
               </li>
               <li>
                 Species: <span>{species}</span>
