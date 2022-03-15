@@ -1,7 +1,7 @@
 import ItemCount from "./ItemCount";
 
-export default function ItemDetail({ product }) {
-  const { name, status, species, gender, image } = product;
+export default function ItemDetail({product}) {
+  const { name, price, status, species, gender, stock, place, image } = product;
 
   return (
     <>
@@ -11,7 +11,7 @@ export default function ItemDetail({ product }) {
           <div id="detailInfo">
             <h2>{name}</h2>
             <ul>
-              <h3>Information</h3>
+              <h4>Information</h4>
               <li>
                 Status: <span>{status}</span>
               </li>
@@ -22,10 +22,11 @@ export default function ItemDetail({ product }) {
                 Gender: <span>{gender}</span>
               </li>
               <li>
-                Description: <span>Lorem ipsum dolor sit.</span>
+                Last known location : <span>{place}</span>
               </li>
             </ul>
-            <ItemCount initial={1} stock={5} />
+            <h4>Price: <span>{price}ETH</span></h4>
+            <ItemCount initial={1} stock={stock} />
           </div>
         </div>
       </div>

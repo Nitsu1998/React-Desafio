@@ -17,18 +17,27 @@
 #logo {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #logo img {
+  display: flex;
+  align-items: center;
   height: 3rem;
   border-radius: 1.5rem;
 }
 
 #title {
-  color: #10b0c8;
   font-size: 1.3rem;
+}
+
+#title h1 {
+  text-decoration: none;
+  color: #10b0c8;
   -webkit-text-stroke: 2px #d3df54;
+}
+
+#title a {
+  text-decoration: none;
 }
 
 #nav {
@@ -36,13 +45,40 @@
   display: flex;
 }
 
-#nav ul {
-  list-style: none;
-  display: inline-block;
+#nav span {
+  padding: 1rem;
 }
+
+#nav-species {
+  position: relative;
+  color: grey;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#nav-species ul {
+  position: absolute;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.1s;
+  background-color: #212124;
+  z-index: 1;
+  margin-top: 1rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+#nav-species ul li {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#nav-species:hover ul {
+  max-height: 400px;
+} 
 
 #nav ul li {
   float: left;
+  list-style: none;
 }
 
 #nav ul li a {
@@ -76,8 +112,6 @@
 }
 
 
-
-
 /* Main */
 
 #main {
@@ -85,31 +119,35 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  padding: 2rem;
 }
 
 #productsContainer {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 5rem;
+  position: relative;
+  top: 1rem;
 }
 
-#product {
+#productsContainer div {
   display: flex;
   flex-direction: column;
   text-align: center;
   color: #13c1d8;
-  margin: 1.5rem 4rem 1rem 4rem;
 }
 
-#product img {
+#productsContainer img {
   border: 1px solid #212124;
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
 #infoProduct {
- background-color: #212124;
- border-radius: 0rem 0rem 1rem 1rem;
- border: 1px solid #13c1d8;
+  width: 250px;
+  background-color: #212124;
+  border-radius: 0rem 0rem 1rem 1rem;
+  border: 1px solid #13c1d8;
 }
 
 #infoProduct h5 {
@@ -229,9 +267,12 @@
   color: #13c1d8;
   box-shadow: 0 2px #7dcd36;
 }
+#detailInfo h4 {
+  color: #13c1d8;
+}
 
 #detailInfo ul {
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   color:#13c1d8;
 }
 

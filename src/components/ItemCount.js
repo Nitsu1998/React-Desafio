@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ItemCount({ initial, stock }) {
+export default function ItemCount({initial, stock}) {
   const [amount, setAmount] = useState(initial);
 
   const decrease = () => {
