@@ -47,9 +47,9 @@ export default function ItemDetail({ product }) {
             </h4>
             <ItemCount initial={1} stock={stock} onAdd={onAdd} />
             {selected !== undefined ? (
-              <div id="aaa">
+              <div id="detailInfoCart">
               <NavLink to="/Cart">
-                <button id="goCart">Go to Cart</button>
+                <button>Go to Cart</button>
               </NavLink>
               </div>
             ) : null}

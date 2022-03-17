@@ -368,7 +368,7 @@
   border: 2px solid #13c1d8;
 }
 
-#goCart {
+#detailInfoCart button {
   color: #212124;
   font-weight: bold;
   font-size: 1rem;
@@ -381,7 +381,7 @@
   border: 1px solid transparent;
 }
 
-#goCart:hover {
+#detailInfoCart button:hover {
   background-color: #212124;
   color: #7dcd36;
   border: 1px solid #13c1d8;
