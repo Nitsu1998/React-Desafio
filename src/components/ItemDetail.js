@@ -1,7 +1,14 @@
+import { toast } from "react-toastify";
 import ItemCount from "./ItemCount";
 
 export default function ItemDetail({product}) {
+
   const { name, price, status, species, gender, stock, place, image } = product;
+
+  const onAdd = (amount) => {
+    const selected = amount
+    toast.success(`Added ${name} (x${selected}) to cart`, {autoClose: 2500})
+  }
 
   return (
     <>
@@ -26,7 +33,7 @@ export default function ItemDetail({product}) {
               </li>
             </ul>
             <h4>Price: <span>{price}ETH</span></h4>
-            <ItemCount initial={1} stock={stock} />
+            <ItemCount initial={1} stock={stock} onAdd={onAdd} />
           </div>
         </div>
       </div>

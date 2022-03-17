@@ -129,7 +129,7 @@ export const productsList = [
   {
     id: 12,
     name: "Gwendolyn",
-    status: "unknown",
+    status: "Dead",
     species: "Robot",
     gender: "Female",
     stock: 2,
@@ -177,7 +177,7 @@ export default function ItemListContainer() {
 
   const [loading, setLoading] = useState();
   const [products, setProducts] = useState([]);
-  const {specie} = useParams()
+  const {specie, status} = useParams()
 
   useEffect(() => {
     setLoading(true)
@@ -189,19 +189,21 @@ export default function ItemListContainer() {
     
     promise
     .then((res) => {
-        if (specie === undefined) {
-            setProducts(productsList)
-        } else {
-          setProducts(res.filter(products => products.species === specie))
-        } 
+        if (specie === undefined && status === undefined) {
+          setProducts(productsList)
+          }else if(specie !== undefined) {
+            setProducts(res.filter(products => products.species === specie))
+          }else {
+            setProducts(res.filter(products => products.status === status))
+          }
       })
       .catch(() => {
-        toast.error("Error al obtener los productos")
+        toast.error("Error al obtener los productos" , {autoClose: 2000})
       })
       .finally(() => {
         setLoading(false);
       });
-  },[specie]);
+  },[specie, status]);
 
   return (
     <>

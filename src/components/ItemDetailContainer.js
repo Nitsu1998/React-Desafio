@@ -24,7 +24,7 @@ export default function ItemDetailCointainer() {
       setProduct(res.find(product => product.id === +id))
       })
       .catch(() => {
-        toast.error("Error al obtener el productos")
+        toast.error("Error al obtener el productos" , {autoClose: 2000})
       })
       .finally(() => {
         setLoading(false);

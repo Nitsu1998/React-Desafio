@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
-import CartWidget from "./components/CartWidget";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailCointainer from "./components/ItemDetailContainer";
 import Footer from "./components/Footer";
@@ -16,11 +15,12 @@ export default function App() {
       <main id="main">
         <Routes>
           <Route path="/" element={<ItemListContainer />}/>
-          <Route path="/cart" element={<CartWidget />}/>
-          <Route path="/species/:specie" element={<ItemListContainer/>}/>
-          <Route path="/item/:id" element={<ItemDetailCointainer/>}/>
-          <Route path="/aboutus" element={<AboutUs/>}/>
-          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/Cart" />
+          <Route path="/Species/:specie" element={<ItemListContainer/>}/>
+          <Route path="/Status/:status" element={<ItemListContainer/>}/>
+          <Route path="/Item/:id" element={<ItemDetailCointainer/>}/>
+          <Route path="/AboutUs" element={<AboutUs/>}/>
+          <Route path="/Contact" element={<Contact/>}/>
         </Routes>
       </main>
       <Footer />

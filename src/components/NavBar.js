@@ -7,30 +7,23 @@ export default function NavBar() {
         <div id="nav-species">
           <span>Species</span>
           <ul>
-            <li>
-              <NavLink to="/Species/Human">Human</NavLink>
-            </li>
-            <li>
-              <NavLink to="/Species/Alien">Alien</NavLink>
-            </li>
-            <li>
-              <NavLink to="/Species/Robot">Robot</NavLink>
-            </li>
-            <li>
-              <NavLink to="/Species/Humanoid">Humanoid</NavLink>
-            </li>
-            <li>
-              <NavLink to="/Species/Mythological-Creature">Mythological Creature</NavLink>
-            </li>
+            <NavLink to="/Species/Human"><li>Human</li></NavLink>
+            <NavLink to="/Species/Alien"><li>Alien</li></NavLink>
+            <NavLink to="/Species/Robot"><li>Robot</li></NavLink>
+            <NavLink to="/Species/Humanoid"><li>Humanoid</li></NavLink>
+            <NavLink to="/Species/Mythological-Creature"><li>Mythological Creature</li></NavLink> 
+          </ul>
+        </div>
+        <div id="nav-status">
+          <span>Status</span>
+          <ul>
+            <NavLink to="/Status/Alive"><li>Alive</li></NavLink>
+            <NavLink to="/Status/Dead"><li>Dead</li></NavLink>
           </ul>
         </div>
         <ul>
-          <li>
-            <NavLink to="/AboutUs">About Us</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Contact">Contact</NavLink>
-          </li>
+          <NavLink to="/AboutUs"><li>AboutUs</li></NavLink>
+          <NavLink to="/Contact"><li>Contact</li></NavLink>
         </ul>
       </div>
     </>

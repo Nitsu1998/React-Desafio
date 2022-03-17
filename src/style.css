@@ -5,6 +5,10 @@
 
 /* Header */
 
+#main {
+  min-height: 82.4vh
+}
+
 #header {
   display: flex;
   align-items: center;
@@ -12,6 +16,7 @@
   box-shadow: 1px 2px 4px #10b0c8;
   position: relative;
   background-color: #212124;
+  height: 6vh;
 }
 
 #logo {
@@ -43,55 +48,92 @@
 #nav {
   align-items: center;
   display: flex;
-}
-
-#nav span {
-  padding: 1rem;
+  font-size: 1.1rem;
+  color: grey;
 }
 
 #nav-species {
   position: relative;
-  color: grey;
   font-weight: bold;
-  font-size: 1.1rem;
+}
+
+#nav-status {
+  position: relative;
+  font-weight: bold;
+  padding-left: 1rem;
 }
 
 #nav-species ul {
   position: absolute;
   max-height: 0px;
   overflow: hidden;
-  transition: all 0.1s;
+  transition: all 0.1s; 
+  top: 2rem;
   background-color: #212124;
   z-index: 1;
-  margin-top: 1rem;
   border-radius: 0rem 0rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #nav-species ul li {
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
   text-align: center;
 }
 
+#nav-species:hover span {
+  color: #7dcd36;
+} 
+
 #nav-species:hover ul {
   max-height: 400px;
+}
+
+#nav-status ul {
+  position: absolute;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.1s; 
+  top: 2rem;
+  background-color: #212124;
+  z-index: 1;
+  border-radius: 0rem 0rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-status ul li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  text-align: center;
+}
+
+#nav-status:hover span {
+  color: #7dcd36;
 } 
+
+#nav-status:hover ul {
+  max-height: 400px;
+}
+
+#nav ul {
+  padding-left: 1rem;
+}
 
 #nav ul li {
   float: left;
   list-style: none;
-}
-
-#nav ul li a {
-  color: grey;
   font-weight: bold;
   text-decoration: none;
   font-size: 1.1rem;
-  padding: 1rem;
+  padding-right: 1rem;
+  color: grey;
 }
 
-#nav ul li a:hover {
+#nav ul li:hover {
   color: #7dcd36;
-}
+} 
 
 #sign button {
   color: #212124;
@@ -110,6 +152,7 @@
   color: #7dcd36;
   border: 1px solid #13c1d8;
 }
+
 
 
 /* Main */
