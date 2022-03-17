@@ -1,26 +1,36 @@
 import { toast } from "react-toastify";
 import ItemCount from "./ItemCount";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-export default function ItemDetail({product}) {
-
+export default function ItemDetail({ product }) {
   const { name, price, status, species, gender, stock, place, image } = product;
+  const [selected, setSelected] = useState();
 
   const onAdd = (amount) => {
-    const selected = amount
-    toast.success(`Added ${name} (x${selected}) to cart`, {autoClose: 2500})
+    setSelected(amount);
+  };
+  if (selected !== undefined) {
+    toast.success(`Added ${name} (x${selected}) to cart`, { autoClose: 3000 });
   }
 
   return (
     <>
+        <NavLink to="/">
+          <button id="goBack"><FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon></button>
+        </NavLink>
       <div id="detailContainer">
         <div id="detail">
-          <img src={image} width="400" height="400" alt="" />
+          <img src={image} width="425" height="425" alt="" />
           <div id="detailInfo">
             <h2>{name}</h2>
             <ul>
               <h4>Information</h4>
               <li>
-                Status: <span>{status}</span> <span id={status === "Alive" ? "alive" : "dead"}></span>
+                Status: <span>{status}</span>{" "}
+                <span id={status === "Alive" ? "alive" : "dead"}></span>
               </li>
               <li>
                 Species: <span>{species}</span>
@@ -32,8 +42,17 @@ export default function ItemDetail({product}) {
                 Last known location : <span>{place}</span>
               </li>
             </ul>
-            <h4>Price: <span>{price}ETH</span></h4>
+            <h4>
+              Price: <span>{price}ETH</span>
+            </h4>
             <ItemCount initial={1} stock={stock} onAdd={onAdd} />
+            {selected !== undefined ? (
+              <div id="aaa">
+              <NavLink to="/Cart">
+                <button id="goCart">Go to Cart</button>
+              </NavLink>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

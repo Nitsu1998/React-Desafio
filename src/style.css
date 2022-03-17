@@ -302,7 +302,7 @@
   border-radius: 0rem 1rem 1rem 0rem;
   border: 1px solid #13c1d8;
   background-color: #212124;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 0.7rem 2rem 0.7rem 2rem;
 }
 
 #detailInfo h2 {
@@ -312,6 +312,7 @@
 }
 #detailInfo h4 {
   color: #13c1d8;
+  margin-bottom: 0.2rem;
 }
 
 #detailInfo ul {
@@ -351,7 +352,40 @@
     height: 100vh;
 }
 
+#goBack {
+  display: inline-block;
+  color: #212124;
+  font-size: 1.5rem;
+  background-color: #13c1d8;
+  padding: 0.3rem;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+}
 
+#goBack:hover {
+  background-color: #212124;
+  color: #7dcd36;
+  border: 2px solid #13c1d8;
+}
+
+#goCart {
+  color: #212124;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #13c1d8;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  padding: 0.5rem 2.7rem 0.5rem 2.7rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+}
+
+#goCart:hover {
+  background-color: #212124;
+  color: #7dcd36;
+  border: 1px solid #13c1d8;
+}
 
 /* Footer */
 

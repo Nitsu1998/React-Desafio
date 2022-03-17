@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 export default function ItemCount({ initial, stock, onAdd }) {
   
@@ -31,9 +30,7 @@ export default function ItemCount({ initial, stock, onAdd }) {
         </div>
         <p id="stockAvailable">Available: {stock}</p>
         <div id="addCart">
-          <NavLink to="/Cart">
-            <button onClick={addCart}>Add to cart</button>
-          </NavLink>
+            <button onClick={addCart}>Add to Cart</button>
         </div>
       </div>
     </>

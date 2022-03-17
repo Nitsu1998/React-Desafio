@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Cart from "./components/Cart";
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
       <main id="main">
         <Routes>
           <Route path="/" element={<ItemListContainer />}/>
-          <Route path="/Cart" />
+          <Route path="/Cart" element={<Cart/>} />
           <Route path="/Species/:specie" element={<ItemListContainer/>}/>
           <Route path="/Status/:status" element={<ItemListContainer/>}/>
           <Route path="/Item/:id" element={<ItemDetailCointainer/>}/>
