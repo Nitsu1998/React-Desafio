@@ -29,9 +29,10 @@ export default function Cart() {
             </button>
           </div>
         ))}
-        <div id="optionsCart">
+        <div id="cartOptionsContainer">
           {productsAmount !== 0 ? (
             <>
+            <div id="cartOptions">
               <div>
                 <p>Total: {total.toFixed(2)} ETH</p>
               </div>
@@ -39,8 +40,9 @@ export default function Cart() {
                 <button onClick={clearCart}>CLEAR CART</button>
                 <button>TO BUY</button>
               </div>
+            </div>
             </>
-          ) : <div id="noProducts"><p>No products added to the cart. We recommend you select many products so we have more sales :)</p></div>}
+          ) : <div id="cartEmpty"><p>No products added to the cart.</p></div>}
         </div>
       </div>
     </>

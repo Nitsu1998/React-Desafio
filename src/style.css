@@ -462,18 +462,26 @@
   font-size: 1.1rem;
 }
 
-#optionsCart {
+#cartOptionsContainer {
   border-left: 1px solid #13c1d8;
   border-right: 1px solid #13c1d8;
   border-bottom: 1px solid #13c1d8;
   border-radius: 0rem 0rem 1rem 1rem;
+}
+
+#cartOptions{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
-#optionsCart p{
+#cartEmpty{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
   font-weight: bold;
   font-size: 1.3rem;
 }
