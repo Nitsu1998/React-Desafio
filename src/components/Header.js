@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 import CartWidget from "./CartWidget.js";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -19,12 +19,12 @@ export default function Header() {
           </Link>
         </div>
         <NavBar />
-        <div id="sign">
-          <SignIn />
-          <SignUp />
-          <NavLink to="/Cart">
-            <CartWidget />
-          </NavLink>
+        <div id="signCart">
+          <div id="sign">
+            <SignIn />
+            <SignUp />
+          </div>
+          <CartWidget />
         </div>
       </header>
     </>

@@ -12,6 +12,7 @@ export const productsList = [
     species: "Human",
     gender: "Male",
     stock: 5,
+    quantity: 0,
     price: 0.4,
     image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
     place: "Citadel of Ricks"
@@ -23,6 +24,7 @@ export const productsList = [
     species: "Human",
     gender: "Male",
     stock: 3,
+    quantity: 0,
     price: 0.6,
     image: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
     place: "Citadel of Ricks"
@@ -34,6 +36,7 @@ export const productsList = [
     species: "Human",
     gender: "Female",
     stock: 8,
+    quantity: 0,
     price: 0.2,
     image: "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
     place: "Earth (Replacement Dimension)"
@@ -45,6 +48,7 @@ export const productsList = [
     species: "Human",
     gender: "Female",
     stock: 9,
+    quantity: 0,
     price: 0.2,
     image: "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
     place: "Earth (Replacement Dimension)"
@@ -56,6 +60,7 @@ export const productsList = [
     species: "Human",
     gender: "Male",
     stock: 5,
+    quantity: 0,
     price: 0.3,
     image: "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
     place: "Earth (Replacement Dimension)"
@@ -67,6 +72,7 @@ export const productsList = [
     species: "Mythological-Creature",
     gender: "Female",
     stock: 2,
+    quantity: 0,
     price: 1.5,
     image: "https://rickandmortyapi.com/api/character/avatar/40.jpeg",
     place: "Nuptia 4"
@@ -78,6 +84,7 @@ export const productsList = [
     species: "Mythological-Creature",
     gender: "Female",
     stock: 3,
+    quantity: 0,
     price: 1,
     image: "https://rickandmortyapi.com/api/character/avatar/41.jpeg",
     place: "Fantasy World"
@@ -89,6 +96,7 @@ export const productsList = [
     species: "Alien",
     gender: "unknown",
     stock: 6,
+    quantity: 0,
     price: 0.4,
     image: "https://rickandmortyapi.com/api/character/avatar/55.jpeg",
     place: "Nuptia 4"
@@ -100,6 +108,7 @@ export const productsList = [
     species: "Alien",
     gender: "Male",
     stock: 2,
+    quantity: 0,
     price: 2.5,
     image: "https://rickandmortyapi.com/api/character/avatar/57.jpeg",
     place: "unknown"
@@ -111,6 +120,7 @@ export const productsList = [
     species: "Humanoid",
     gender: "Male",
     stock: 1,
+    quantity: 0,
     price: 4,
     image: "https://rickandmortyapi.com/api/character/avatar/70.jpeg",
     place: "unknown"
@@ -122,6 +132,7 @@ export const productsList = [
     species: "Alien",
     gender: "Male",
     stock: 7,
+    quantity: 0,
     price: 0.3,
     image: "https://rickandmortyapi.com/api/character/avatar/150.jpeg",
     place: "Galactic Federation Prison"
@@ -133,6 +144,7 @@ export const productsList = [
     species: "Robot",
     gender: "Female",
     stock: 2,
+    quantity: 0,
     price: 4,
     image: "https://rickandmortyapi.com/api/character/avatar/151.jpeg",
     place: "Earth (Replacement Dimension)"
@@ -144,6 +156,7 @@ export const productsList = [
     species: "Mythological-Creature",
     gender: "Male",
     stock: 5,
+    quantity: 0,
     price: 1.75,
     image: "https://rickandmortyapi.com/api/character/avatar/238.jpeg",
     place: "Fantasy World"
@@ -155,6 +168,7 @@ export const productsList = [
     species: "Alien",
     gender: "Male",
     stock: 25,
+    quantity: 0,
     price: 0.1,
     image: "https://rickandmortyapi.com/api/character/avatar/525.jpeg",
     place: "Monogatron Mothership"
@@ -166,6 +180,7 @@ export const productsList = [
     species: "Humanoid",
     gender: "Male",
     stock: 1,
+    quantity: 0,
     price: 10,
     image: "https://rickandmortyapi.com/api/character/avatar/264.jpeg",
     place: "Interdimensional Cable"
@@ -173,7 +188,6 @@ export const productsList = [
 ];
 
 export default function ItemListContainer() {
-
 
   const [loading, setLoading] = useState();
   const [products, setProducts] = useState([]);

@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <p>Odio hacer el footer</p>
+        <p>We all hate doing the footer</p>
       </footer>
     </>
   );

@@ -5,7 +5,6 @@ import { toast } from "react-toastify";
 import { productsList } from "./ItemListContainer";
 import { useParams } from "react-router-dom";
 
-
 export default function ItemDetailCointainer() {
  
   const [loading, setLoading] = useState(true);

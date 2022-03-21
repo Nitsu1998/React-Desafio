@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 export default function Item({ product }) {
+  
   const { id, name, price, image } = product;
 
   return (
