@@ -3,7 +3,7 @@ export const context = createContext()
 const { Provider } = context
 
 export default function CartContextProvider( {children} ) {
-
+    
     const [productsCart, setProductsCart] = useState([])
     const [productsAmount, setProductsAmount] = useState(0)
     const [total, setTotal] = useState (0)

@@ -2,11 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
 import { context } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
 
   const { productsCart, productsAmount, removeProduct, clearCart, total } = useContext(context);
-
+  
   return (
     <>
       <div id="cartContainer">
@@ -44,7 +45,7 @@ export default function Cart() {
               </div>
             </div>
             </>
-          ) : <div id="cartEmpty"><p>No products added to the cart.</p></div>}
+          ) : <div id="cartEmpty"><Link to="/"><p>No products added to the cart.</p></Link></div>}
         </div>
       </div>
     </>

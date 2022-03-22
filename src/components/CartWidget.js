@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { context } from "../context/CartContext";
 
@@ -11,11 +11,11 @@ export default function CartWidget() {
   return (
     <>
       <div id="cart">
-        <NavLink to="/Cart">
+        <Link to="/Cart">
           <button>
             <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
           </button>
-        </NavLink>
+        </Link>
       </div>
       <div id="cartNumber">{productsAmount !== 0 ? productsAmount : null}</div>
     </>

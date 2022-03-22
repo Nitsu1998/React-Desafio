@@ -1,6 +1,7 @@
 import Item from "./Item";
 
 export default function ItemList({products}) {
+
   return (
     <>
       <div id="productsContainer">

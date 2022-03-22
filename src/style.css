@@ -207,8 +207,8 @@
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 5rem;
-  position: relative;
-  top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #productsContainer div {
@@ -492,6 +492,11 @@
   padding: 1rem;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+#cartEmpty a {
+  text-decoration: none;
+  color: #13c1d8;
 }
 
 /* Footer */

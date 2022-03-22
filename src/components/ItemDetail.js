@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { context } from "../context/CartContext"
 
 export default function ItemDetail({ product }) {
-
+  
   const {addProduct} = useContext(context)
 
   const {name, price, status, species, gender, stock, place, image } = product;

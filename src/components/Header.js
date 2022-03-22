@@ -5,6 +5,7 @@ import SignUp from "./SignUp";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  
   return (
     <>
       <header id="header">
