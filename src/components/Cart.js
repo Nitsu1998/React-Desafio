@@ -17,6 +17,7 @@ export default function Cart() {
           <p>Quantity</p>
           <p>Subtotal</p>
         </div>
+
         {productsCart.map((product) => (
           <div id="cartProduct" key={product.id}>
             <img src={product.image} alt="" width="100px" />
@@ -29,6 +30,7 @@ export default function Cart() {
             </button>
           </div>
         ))}
+        
         <div id="cartOptionsContainer">
           {productsAmount !== 0 ? (
             <>
