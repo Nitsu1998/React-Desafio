@@ -40,7 +40,7 @@ export default function ItemCount({ id, initial, stock, onAdd }) {
           <p id="stockAvailable">Available: {stockAvailable}</p>
           <div id="addCart">
             <Link to="/Cart">
-              <button onClick={addCart}>Add to Cart</button>
+              <button onClick={addCart}>Add To Cart</button>
             </Link>
           </div>
         </div>
