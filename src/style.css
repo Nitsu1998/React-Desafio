@@ -499,6 +499,34 @@
   color: #13c1d8;
 }
 
+#noStock {
+  max-width: 11rem;
+  color: grey;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#noStock p {
+  padding-bottom: 1rem;
+}
+
+#noStock button {
+  color: #212124;
+  font-size: 1rem;
+  background-color: #13c1d8;
+  font-weight: bold;
+  border: none;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  border-radius: 0.4rem;
+  border: 1px solid #13c1d8;
+}
+
+#noStock button:hover {
+  background-color: #212124;
+  color: #7dcd36;
+}
+
 /* Footer */
 
 footer {

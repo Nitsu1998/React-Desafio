@@ -6,7 +6,7 @@ export default function ItemDetail({ product }) {
   
   const {addProduct} = useContext(context)
 
-  const {name, price, status, species, gender, stock, place, image } = product;
+  const {id, name, price, status, species, gender, stock, place, image } = product;
 
   const onAdd = (amount) => {
     addProduct(product, amount)
@@ -29,7 +29,7 @@ export default function ItemDetail({ product }) {
             <h4>
               Price: <span>{price}ETH</span>
             </h4>
-            <ItemCount initial={1} stock={stock} onAdd={onAdd} />
+            <ItemCount id = {id} initial={1} stock={stock} onAdd={onAdd} />
           </div>
         </div>
       </div>
