@@ -6,7 +6,7 @@ export default function Item({ product }) {
 
   return (
     <>
-      <div id={`product${id}`} className="scale">
+      <div id={`product:${id}`} className="scale">
         <img src={image} width="250" height="250" alt="" />
         <div id="infoProduct">
           <h3>{name}</h3>
