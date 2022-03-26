@@ -17,7 +17,7 @@ export default function ItemDetailCointainer() {
 
     getDoc(getProductById)
       .then((res) => {
-        setProduct(res.data());
+        setProduct({...res.data(), id: id});
       })
       .catch(() => {
         toast.error("Error al obtener el productos", { autoClose: 2000 });
@@ -25,8 +25,8 @@ export default function ItemDetailCointainer() {
       .finally(() => {
         setLoading(false);
       });
-  }, [id]);
-
+    }, [id]);
+    
   return (
     <>
       {loading ? (

@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { db } from "../firebase/Firebase";
 import { getDocs, collection, query, where } from "firebase/firestore";
 
+
 export default function ItemListContainer() {
   const [loading, setLoading] = useState();
   const [products, setProducts] = useState([]);
@@ -13,39 +14,32 @@ export default function ItemListContainer() {
 
   useEffect(() => {
     let getProducts;
-    setLoading(true);
-
-    if (specie !== undefined) {
-      getProducts = query(
-        collection(db, "characters"),
-        where("species", "==", specie)
-      );
+    setLoading(true)
+    
+    if(specie !== undefined) {
+      getProducts = query(collection(db, "characters"), where("species", "==", specie))
     } else if (status !== undefined) {
-      getProducts = query(
-        collection(db, "characters"),
-        where("status", "==", status)
-      );
+      getProducts = query(collection(db, "characters"), where("status", "==", status))
     } else {
-      getProducts = query(collection(db, "characters"));
+      getProducts = query(collection(db, "characters"))
     }
 
     getDocs(getProducts)
-      .then((res) => {
-        setProducts(
-          res.docs.map((p) => ({
-            id: p.id,
-            ...p.data(),
-          }))
-        );
+      .then((res)=>{
+        setProducts(res.docs.map(p => ({
+          id: p.id,
+          ...p.data(), 
+        })))
       })
-      .catch(() => {
+      .catch(()=>{
         toast.error("Error al obtener los productos", { autoClose: 2000 });
       })
       .finally(() => {
         setLoading(false);
       });
+      
   }, [specie, status]);
-
+  
   return (
     <>
       {loading ? (
