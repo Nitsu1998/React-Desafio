@@ -20,7 +20,7 @@ export default function Cart() {
         </div>
 
         {productsCart.map((product) => (
-          <div id="cartProduct" key={product.id}>
+          <div id={`product:${product.id}`} className="cartProduct" key={product.id}>
             <img src={product.image} alt="" width="100px" />
             <p>{product.name}</p>
             <p>{product.price} ETH</p>

@@ -12,6 +12,18 @@ export default function ItemDetail({ product }) {
     addProduct(product, amount)
   };
 
+  const statusColor = (status) => {
+    let a 
+    if(status === "Alive"){
+      a = "alive"
+    } else if (status === "Dead") {
+      a = "dead"
+    } else {
+      a = "unknown"
+    }
+    return a;
+  }
+
   return (
     <>
       <div id="detailContainer">
@@ -21,7 +33,7 @@ export default function ItemDetail({ product }) {
             <h2>{name}</h2>
             <ul>
               <h4>Information</h4>
-              <li>Status: <span>{status}</span>{" "} <span id={status === "Alive" ? "alive" : "dead"}></span></li>
+              <li>Status: <span>{status}</span>{" "} <span id={statusColor(status)}></span></li>
               <li>Species: <span>{species}</span></li>
               <li>Gender: <span>{gender}</span></li>
               <li>Last known location : <span>{place}</span></li>

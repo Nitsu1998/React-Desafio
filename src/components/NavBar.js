@@ -19,6 +19,7 @@ export default function NavBar() {
           <ul>
             <NavLink to="/Status/Alive"><li>Alive</li></NavLink>
             <NavLink to="/Status/Dead"><li>Dead</li></NavLink>
+            <NavLink to="/Status/Unknown"><li>Unknown</li></NavLink>
           </ul>
         </div>
         <ul>

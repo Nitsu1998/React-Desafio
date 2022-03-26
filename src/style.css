@@ -389,12 +389,22 @@
   margin-bottom: 0.1rem;
 }
 
+#unknown {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #d3df54;
+  border-radius: 50%;
+  margin-left: 0.25rem;
+  margin-bottom: 0.1rem;
+}
+
 #loading{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 3rem;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 3rem;
+  height: 100vh;
 }
 
 #detailInfoCart button {
@@ -446,7 +456,7 @@
   border: 1px solid #13c1d8;
 }
 
-#cartProduct {
+.cartProduct {
   display: grid;
   grid-template-columns: 10rem 10rem 10rem 10rem 10rem 1rem;
   justify-content:space-between;
