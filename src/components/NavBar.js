@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 export default function NavBar() {
   return (
     <>
-      <div id="nav">
-        <div id="nav-species">
+      <div className="nav">
+        <div className="nav-species">
           <span>Species</span>
           <ul>
             <NavLink to="/Species/Human"><li>Human</li></NavLink>
@@ -14,7 +14,7 @@ export default function NavBar() {
             <NavLink to="/Species/Mythological-Creature"><li>Mythological Creature</li></NavLink> 
           </ul>
         </div>
-        <div id="nav-status">
+        <div className="nav-status">
           <span>Status</span>
           <ul>
             <NavLink to="/Status/Alive"><li>Alive</li></NavLink>
@@ -24,7 +24,6 @@ export default function NavBar() {
         </div>
         <ul>
           <NavLink to="/AboutUs"><li>AboutUs</li></NavLink>
-          <NavLink to="/Contact"><li>Contact</li></NavLink>
         </ul>
       </div>
     </>

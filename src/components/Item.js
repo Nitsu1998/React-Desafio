@@ -8,7 +8,7 @@ export default function Item({ product }) {
     <>
       <div id={`product:${id}`} className="scale">
         <img src={image} width="250" height="250" alt="" />
-        <div id="infoProduct">
+        <div className="infoProduct">
           <h3>{name}</h3>
           <h5>Price: {price}ETH</h5>
           <Link to={`/item/${id}`}>

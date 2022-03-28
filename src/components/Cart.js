@@ -10,8 +10,8 @@ export default function Cart() {
   
   return (
     <>
-      <div id="cartContainer">
-        <div id="cartInfo">
+      <div className="cartContainer">
+        <div className="cartInfo">
           <p>Product</p>
           <p>Name</p>
           <p>Price</p>
@@ -32,10 +32,10 @@ export default function Cart() {
           </div>
         ))}
         
-        <div id="cartOptionsContainer">
+        <div className="cartOptionsContainer">
           {productsAmount !== 0 ? (
             <>
-            <div id="cartOptions">
+            <div className="cartOptions">
               <div>
                 <p>Total: {total.toFixed(2)} ETH</p>
               </div>
@@ -45,7 +45,7 @@ export default function Cart() {
               </div>
             </div>
             </>
-          ) : <div id="cartEmpty"><Link to="/"><p>No products added to the cart.</p></Link></div>}
+          ) : <div className="cartEmpty"><Link to="/"><p>No products added to the cart.</p></Link></div>}
         </div>
       </div>
     </>

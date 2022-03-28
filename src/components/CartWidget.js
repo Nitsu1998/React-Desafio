@@ -10,14 +10,14 @@ export default function CartWidget() {
 
   return (
     <>
-      <div id="cart">
+      <div className="cart">
         <Link to="/Cart">
           <button>
             <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
           </button>
         </Link>
       </div>
-      <div id="cartNumber">{productsAmount !== 0 ? productsAmount : null}</div>
+      <div className="cartNumber">{productsAmount !== 0 ? productsAmount : null}</div>
     </>
   );
 }

@@ -48,13 +48,13 @@ export default function CartContextProvider( {children} ) {
     }
 
     const cartContext = {
-        productsCart: productsCart,
-        productsAmount: productsAmount,
-        total: total,
-        removeProduct: removeProduct,
-        addProduct: addProduct,
-        clearCart: clearCart,
-        totalPrice: totalPrice,
+        productsCart,
+        productsAmount,
+        total,
+        removeProduct,
+        addProduct,
+        clearCart,
+        totalPrice,
     }
     
     return (

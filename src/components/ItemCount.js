@@ -29,21 +29,21 @@ export default function ItemCount({ id, initial, stock, onAdd }) {
   return (
     <>
       {stockAvailable !== 0 ? (
-        <div id="productCounter">
-          <div id="counter">
+        <div className="productCounter">
+          <div className="counter">
             <button onClick={decrease}>-</button>
-            <p id="amount">{amount}</p>
+            <p className="amount">{amount}</p>
             <button onClick={increase}>+</button>
           </div>
-          <p id="stockAvailable">Available: {stockAvailable}</p>
-          <div id="addCart">
+          <p className="stockAvailable">Available: {stockAvailable}</p>
+          <div className="addCart">
             <Link to="/Cart">
               <button onClick={addCart}>Add To Cart</button>
             </Link>
           </div>
         </div>
       ) : (
-        <div id="noStock">
+        <div className="noStock">
           <p>You already have all the available stock of this product in the cart</p>
           <Link to="/Cart">
           <button>Go To Cart</button>

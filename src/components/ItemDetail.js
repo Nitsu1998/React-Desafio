@@ -5,35 +5,22 @@ import { context } from "../context/CartContext"
 export default function ItemDetail({ product }) {
   
   const {addProduct} = useContext(context)
-
   const {id, name, price, status, species, gender, stock, place, image } = product;
 
   const onAdd = (amount) => {
     addProduct(product, amount)
   };
 
-  const statusColor = (status) => {
-    let a 
-    if(status === "Alive"){
-      a = "alive"
-    } else if (status === "Dead") {
-      a = "dead"
-    } else {
-      a = "unknown"
-    }
-    return a;
-  }
-
   return (
     <>
-      <div id="detailContainer">
-        <div id="detail">
+      <div className="detailContainer">
+        <div className="detail">
           <img src={image} width="425" height="425" alt="" />
-          <div id="detailInfo">
+          <div className="detailInfo">
             <h2>{name}</h2>
             <ul>
               <h4>Information</h4>
-              <li>Status: <span>{status}</span>{" "} <span id={statusColor(status)}></span></li>
+              <li>Status: <span>{status}</span><span className={("" + status).toLowerCase()}></span></li>
               <li>Species: <span>{species}</span></li>
               <li>Gender: <span>{gender}</span></li>
               <li>Last known location : <span>{place}</span></li>
@@ -41,7 +28,7 @@ export default function ItemDetail({ product }) {
             <h4>
               Price: <span>{price}ETH</span>
             </h4>
-            <ItemCount id = {id} initial={1} stock={stock} onAdd={onAdd} />
+            <ItemCount id={id} initial={1} stock={stock} onAdd={onAdd} />
           </div>
         </div>
       </div>

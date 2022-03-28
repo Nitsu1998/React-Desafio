@@ -43,7 +43,7 @@ export default function ItemListContainer() {
   return (
     <>
       {loading ? (
-        <div id="loading">
+        <div className="loading">
           <ClipLoader color={"#13c1d8"} size={100} loading={loading} />
         </div>
       ) : (

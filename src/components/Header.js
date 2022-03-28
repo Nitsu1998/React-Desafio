@@ -9,19 +9,19 @@ export default function Header() {
   return (
     <>
       <header id="header">
-        <div id="logo">
+        <div className="logo">
           <Link to="/">
             <img src="/img/logo.png" alt="" />
           </Link>
         </div>
-        <div id="title">
+        <div className="title">
           <Link to="/">
             <h1>RICK & MORTY</h1>
           </Link>
         </div>
         <NavBar />
-        <div id="signCart">
-          <div id="sign">
+        <div className="headerButtons">
+          <div className="sign">
             <SignIn />
             <SignUp />
           </div>
