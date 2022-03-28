@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <footer>
+      <footer id="footer">
         <p>We all hate doing the footer</p>
       </footer>
     </>

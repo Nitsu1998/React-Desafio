@@ -155,6 +155,7 @@
   background-color: #212124;
   color: #7dcd36;
   border: 1px solid #13c1d8;
+  cursor: pointer;
 }
 
 .cart {
@@ -178,6 +179,7 @@
   background-color: #212124;
   color: #7dcd36;
   border: 1px solid #13c1d8;
+  cursor: pointer;
 }
 
 .cartNumber {
@@ -230,6 +232,9 @@
 }
 
 .infoProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   background-color: #212124;
   border-radius: 0rem 0rem 1rem 1rem;
@@ -247,7 +252,7 @@
   background-color: #13c1d8;
   font-weight: bold;
   border: none;
-  padding: 0.2rem;
+  padding: 0.3rem;
   margin: 0.3rem;
   border-radius: 0.4rem;
   border: 1px solid #13c1d8;
@@ -256,6 +261,7 @@
 .infoProduct button:hover {
   background-color: #212124;
   color: #7dcd36;
+  cursor: pointer;
 }
 
 .productCounter {
@@ -282,6 +288,7 @@
 .counter button:hover {
   background-color: #212124;
   color: #7dcd36;
+  cursor: pointer;
 }
 
 .amount {
@@ -320,6 +327,7 @@
 .addCart button:hover {
   background-color:#212124;
   color: #7dcd36;
+  cursor: pointer;
 }
 
 .detailContainer{
@@ -433,6 +441,7 @@
   background-color: #212124;
   color: #7dcd36;
   border: 1px solid #13c1d8;
+  cursor: pointer;
 }
 
 .cartProduct {
@@ -489,7 +498,7 @@
 }
 
 .noStock {
-  max-width: 11rem;
+  max-width: 40%;
   color: grey;
   padding-bottom: 1rem;
   text-align: center;
@@ -507,18 +516,44 @@
   border: none;
   padding: 0.4rem;
   margin: 0.3rem;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   border: 1px solid #13c1d8;
 }
 
 .noStock button:hover {
   background-color: #212124;
   color: #7dcd36;
+  cursor: pointer;
+}
+
+.aboutUs {
+  width: 50%;
+  margin: 3rem auto;
+  background-color: #212124;
+  color: #13c1d8;
+  padding: 2rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  border: 1px solid #13c1d8;
+}
+
+.aboutUs h3{
+  padding-bottom: 1rem;
+  text-align:justify;
+}
+
+.aboutUs ul {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.aboutUs span {
+  color: grey;
 }
 
 /* Footer */
 
-footer {
+#footer {
   display: flex;
   justify-content: center;
   align-items: center;
