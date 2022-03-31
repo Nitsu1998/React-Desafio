@@ -33,15 +33,14 @@ export default function Checkout() {
     <>
       {user?.displayName === undefined ? (
         <div>
-          <h2>An account must be created</h2>
           <SignUp />
         </div>
       ) : (
         <div className="purchase">
           <h2>Customer's information</h2>
           <ul>
-            <li>Username: {user.displayName}</li>
-            <li>Email: {user.email}</li>
+            <li>Username: <span>{user.displayName}</span></li>
+            <li>Email: <span>{user.email}</span></li>
           </ul>
           {total === 0 ? (
             <div>

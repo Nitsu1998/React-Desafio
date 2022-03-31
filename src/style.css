@@ -710,16 +710,22 @@
 .purchase ul {
   list-style: none;
   padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .purchase li {
   padding: 0.2rem;
 }
 
+.purchase span {
+  color: grey;
+}
+
 .purchaseProduct{
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #13c1d8;
 }
@@ -733,11 +739,10 @@
 }
 
 .purchase button {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
-  width: 30%;
   color: #212124;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: #13c1d8;
   font-weight: bold;
   border: none;

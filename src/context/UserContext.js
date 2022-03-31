@@ -7,7 +7,6 @@ const { Provider } = context;
 
 export default function UserContextProvider({ children }) {
   const [user, setUser] = useState({});
-  const [log, setlog] = useState(false)
 
   onAuthStateChanged(auth, (currentUser) => {
     setTimeout(() => {
@@ -19,7 +18,6 @@ export default function UserContextProvider({ children }) {
     createUserWithEmailAndPassword(auth, email, password)
       .then(() => {
         setInfo(name);
-        return "Registrado con exito"
       })
       .catch((error) => {
         if (error.code === "auth/email-already-in-use") {
@@ -40,7 +38,6 @@ export default function UserContextProvider({ children }) {
   const signIn = (email, password) => {
     signInWithEmailAndPassword(auth, email, password)
       .then(() => {
-        setlog(true)
       })
       .catch((error) => {
         error.code === "auth/user-not-found"
@@ -51,7 +48,6 @@ export default function UserContextProvider({ children }) {
 
   const logOut = () => {
     signOut(auth)
-    setlog(false)
   };
 
   const setInfo = (name) => {
@@ -88,7 +84,6 @@ export default function UserContextProvider({ children }) {
     deleteAccount,
     forgotPassword,
     user,
-    log,
   };
 
   return (
