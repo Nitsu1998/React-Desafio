@@ -7,6 +7,7 @@ export default function CartContextProvider( {children} ) {
     const [productsCart, setProductsCart] = useState([])
     const [productsAmount, setProductsAmount] = useState(0)
     const [total, setTotal] = useState (0)
+    const [checkout, setCheckout] = useState(false)
 
     const addProduct = (product, amount) => {
         const updatedCart = [...productsCart];
@@ -37,15 +38,22 @@ export default function CartContextProvider( {children} ) {
         setProductsCart([])
         setProductsAmount(0)
         setTotal(0)
+        setCheckout(false)
+    }
+
+    const goCheckout = () => {
+        setCheckout(true)
     }
 
     const cartContext = {
         productsCart,
         productsAmount,
         total,
+        checkout,
         removeProduct,
         addProduct,
         clearCart,
+        goCheckout,
     }
     
     return (

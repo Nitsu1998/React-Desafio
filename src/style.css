@@ -670,6 +670,7 @@ body::-webkit-scrollbar-thumb {
 
 .createdAccount h2 {
   padding: 1rem;
+  color: #7dcd36;
 }
 
 .createdAccount p {

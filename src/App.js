@@ -31,7 +31,7 @@ export default function App() {
               <Route path="/SignIn" element={<SignIn />} />
               <Route path="/SignUp" element={<SignUp />} />
               <Route path="/Checkout" element={<Checkout />} />
-              <Route path="/User" element={<User />} />
+              <Route path="/User/:user" element={<User />} />
             </Routes>
           </main>
           <Footer />

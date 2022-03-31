@@ -5,7 +5,7 @@ export default function SignIn() {
   const { signIn, forgotPassword } = useContext(context);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };

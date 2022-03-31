@@ -3,16 +3,22 @@ import CartWidget from "./CartWidget.js";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext, useEffect } from "react";
 import { context } from "../context/UserContext";
+import { contextCart } from "../context/CartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   
   const { user, logOut } = useContext(context);
+  const { checkout } = useContext(contextCart)
   const navigate = useNavigate()
   
   useEffect ( ()=> {
-    navigate("/")
+    if (!checkout) {
+      navigate("/")
+    } else {
+      navigate("/Checkout")
+    }
     //eslint-disable-next-line
   },[user])
 
@@ -33,7 +39,7 @@ export default function Header() {
           <div className="sign">
             {user?.displayName !== undefined ? (
               <div className="userName">
-                {<Link to="/User"><h4>{user.displayName}</h4></Link>}
+                {<Link to={`/User/${user.displayName}`}><h4>{user.displayName}</h4></Link>}
                 <button onClick={logOut} title="Log out"><FontAwesomeIcon icon={faRightFromBracket}/></button>
               </div>
             ) : (
