@@ -13,6 +13,7 @@ export default function Header() {
   
   useEffect ( ()=> {
     navigate("/")
+    //eslint-disable-next-line
   },[user])
 
   return (
