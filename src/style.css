@@ -5,6 +5,17 @@
 
 /* Header */
 
+body::-webkit-scrollbar {
+  background: #13c1d8;
+  width: 0.5rem;
+  border:1px solid #212124;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #7dcd36;
+  border-radius: 0.25rem;
+}
+
 #main {
   min-height: 81.4vh
 }

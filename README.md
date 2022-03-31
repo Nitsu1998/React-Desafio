@@ -1,6 +1,6 @@
 # Proyecto App Web con ReactJS
 
-![Image text](./public/img/homeImage.png)
+![App image](./public/img/homeImage.png)
 
 El siguiente proyecto sirve como ejemplo de desarrollo de una App web con ReactJS y utilizando Firebase como base de datos. Se construyó un e-commerce de personajes de la serie: "Rick & Morty" que cuenta con las siguientes características:
 
@@ -30,3 +30,6 @@ Herramienta utilizada para implementar spinners de carga dentro de la App. Mejor
 #### React Toastify
 Sitema de notificaciones emergentes para notificar al usuario de determinado error y/o confirmacion.
 (https://www.npmjs.com/package/react-toastify)
+
+#### App demo
+![App demo](./public/img/app-demo.gif)
