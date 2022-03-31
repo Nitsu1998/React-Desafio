@@ -32,7 +32,7 @@ export default function ItemListContainer() {
         })))
       })
       .catch(()=>{
-        toast.error("Error al obtener los productos", { autoClose: 2000 });
+        toast.error("Error getting products", { autoClose: 2000 });
       })
       .finally(() => {
         setLoading(false);

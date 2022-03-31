@@ -1,11 +1,11 @@
 import { useContext, useState } from "react";
-import { context } from "../context/CartContext";
+import { contextCart } from "../context/CartContext";
 import { Link } from "react-router-dom";
 
 export default function ItemCount({ id, initial, stock, onAdd }) {
 
   const [amount, setAmount] = useState(initial);
-  const { productsCart } = useContext(context);
+  const { productsCart } = useContext(contextCart);
   const productCart = productsCart.find(p => p.id === id);
   const stockAvailable = stock - (productCart?.quantity || 0);
 

@@ -1,15 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { useContext } from "react";
-import { context } from "../context/CartContext";
+import { useContext} from "react";
+import { contextCart } from "../context/CartContext";
 import { Link } from "react-router-dom";
 
 export default function Cart() {
 
-  const { productsCart, productsAmount, removeProduct, clearCart, total } = useContext(context);
+  const { productsCart, productsAmount, removeProduct, clearCart, total } = useContext(contextCart);
   
   return (
-    <>
       <div className="cartContainer">
         <div className="cartInfo">
           <p>Product</p>
@@ -41,13 +40,12 @@ export default function Cart() {
               </div>
               <div>
                 <button onClick={clearCart}>CLEAR CART</button>
-                <button>TO BUY</button>
+                <Link to="/Checkout"><button>TO BUY</button></Link>
               </div>
             </div>
             </>
           ) : <div className="cartEmpty"><Link to="/"><p>No products added to the cart.</p></Link></div>}
         </div>
       </div>
-    </>
   );
 }

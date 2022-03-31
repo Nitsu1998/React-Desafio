@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <>
       <div className="nav">
         <div className="nav-species">
           <span>Species</span>
@@ -26,6 +25,5 @@ export default function NavBar() {
           <NavLink to="/AboutUs"><li>AboutUs</li></NavLink>
         </ul>
       </div>
-    </>
   );
 }

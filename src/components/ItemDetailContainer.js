@@ -17,10 +17,13 @@ export default function ItemDetailCointainer() {
 
     getDoc(getProductById)
       .then((res) => {
-        setProduct({...res.data(), id: id});
+        setProduct({
+          id: id,
+          ...res.data(),
+          });
       })
       .catch(() => {
-        toast.error("Error al obtener el productos", { autoClose: 2000 });
+        toast.error("Failed to get product", { autoClose: 2000 });
       })
       .finally(() => {
         setLoading(false);

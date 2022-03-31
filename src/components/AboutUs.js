@@ -1,6 +1,5 @@
 export default function AboutUs() {
   return (
-    <>
       <div className="aboutUs">
         <h3>
           This page has been created with ReactJs, using information obtained
@@ -22,6 +21,5 @@ export default function AboutUs() {
           </li>
         </ul>
       </div>
-    </>
   );
 }

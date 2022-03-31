@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
-export const context = createContext()
-const { Provider } = context
+export const contextCart = createContext()
+const { Provider } = contextCart
 
 export default function CartContextProvider( {children} ) {
     
@@ -19,7 +19,7 @@ export default function CartContextProvider( {children} ) {
         }
         setProductsCart(updatedCart);
         setProductsAmount(productsAmount + amount)
-        totalPrice(product.price, amount)
+        setTotal(total + product.price*amount)
     }
 
     const removeProduct = (id) => { 
@@ -30,21 +30,13 @@ export default function CartContextProvider( {children} ) {
             product.quantity-=1;
         }
         setProductsAmount(productsAmount - 1)
-        setTotal((total - product.price))
+        setTotal(total - product.price)
     }
 
     const clearCart = () => {
         setProductsCart([])
         setProductsAmount(0)
         setTotal(0)
-    }
-
-    const totalPrice = (price, amount) => {
-         if(total !== 0) {
-            setTotal((total + price*amount))
-        }else {
-            setTotal((price*amount)) 
-        } 
     }
 
     const cartContext = {
@@ -54,14 +46,11 @@ export default function CartContextProvider( {children} ) {
         removeProduct,
         addProduct,
         clearCart,
-        totalPrice,
     }
     
     return (
-        <>
             <Provider value={cartContext}>
                 {children}
             </Provider>
-        </>
     )
 }
