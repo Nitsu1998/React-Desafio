@@ -14,6 +14,7 @@ El siguiente proyecto sirve como ejemplo de desarrollo de una App web con ReactJ
     * Ver informacion de la cuenta creada: nombre, email, fecha de creacion.
     * Recuperacion de contraseña via email en la seccion *Sign In*.
     * Eliminar cuenta.
+* Diseño responsive para una correcta visualización en distintos dispositivos.
 
 ### Librerías extra
 
