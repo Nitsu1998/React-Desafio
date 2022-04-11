@@ -205,6 +205,7 @@ body::-webkit-scrollbar-thumb {
 .userName {
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .userName a {
@@ -679,7 +680,7 @@ body::-webkit-scrollbar-thumb {
   padding: 1rem;
 }
 
-.createdAccount button {
+.deleteAccount {
   color: #212124;
   font-size: 0.9rem;
   background-color: red;
@@ -691,7 +692,7 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid transparent;
 }
 
-.createdAccount button:hover {
+.deleteAccount:hover {
   background-color: #212124;
   color: red;
   border: 1px solid red;
@@ -782,6 +783,51 @@ body::-webkit-scrollbar-thumb {
   color: #13c1d8;
 }
 
+.purchaseCodes {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.purchaseProductContainer button {
+  margin: 0.2rem;
+  color: #212124;
+  font-size: 1rem;
+  background-color: #13c1d8;
+  font-weight: bold;
+  border: none;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+}
+
+.purchaseProductContainer button:hover {
+  background-color: #212124;
+  color: #7dcd36;
+  border: 1px solid #13c1d8;
+  cursor: pointer;
+}
+
+.purchaseProductContainer {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.purchaseResume{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #13c1d8;
+}
+
+.purchaseResume p{
+  padding-left: 1rem;
+}
+
+.purchaseResume img {
+  border-radius: 50%;
+}
 
 /* Footer */
 
@@ -869,7 +915,12 @@ body::-webkit-scrollbar-thumb {
     width: auto;
   }
 
-  .infoProduct, .infoProduct button, .detail, .signContainer, .signContainer div, .signContainer button , .aboutUs, .createdAccount, .createdAccount button, .purchase , .purchase button , .cartOptions, .cartProduct button, .cartOptions button, .signContainer input , .signContainer p, .productCounter button, .productCounter p {
+  .createdAccount {
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  .infoProduct, .infoProduct button, .detail, .signContainer, .signContainer div, .signContainer button , .aboutUs, .createdAccount button, .purchase , .purchase button , .cartOptions, .cartProduct button, .cartOptions button, .signContainer input , .signContainer p, .productCounter button, .productCounter p {
     font-size: 0.8rem;
   }
 }
@@ -951,7 +1002,12 @@ body::-webkit-scrollbar-thumb {
     width: 95%;
   }
 
-  .infoProduct, .infoProduct button, .detail, .signContainer, .signContainer div, .signContainer button , .aboutUs, .createdAccount, .createdAccount button, .purchase , .purchase button , .cartOptions, .cartProduct button, .cartOptions button, .signContainer input, .signContainer p, .productCounter button, .productCounter p {
+  .createdAccount {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  .infoProduct, .infoProduct button, .detail, .signContainer, .signContainer div, .signContainer button , .aboutUs, .createdAccount button, .purchase , .purchase button , .cartOptions, .cartProduct button, .cartOptions button, .signContainer input, .signContainer p, .productCounter button, .productCounter p {
     font-size: 0.7rem;
   }
 }
@@ -980,7 +1036,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .userName {
-    font-size: 0.3rem;
+    font-size: 0.5rem;
   }
 
   .cart {
@@ -1037,7 +1093,12 @@ body::-webkit-scrollbar-thumb {
     width: 95%;
   }
 
-  .infoProduct, .infoProduct button, .detail, .signContainer, .signContainer div, .signContainer button , .aboutUs, .createdAccount, .createdAccount button, .purchase , .purchase button , .cartOptions, .cartProduct button, .cartOptions button, .signContainer input, .signContainer p, .productCounter button, .productCounter p {
+  .createdAccount {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
+  .infoProduct, .infoProduct button, .detail, .signContainer, .signContainer div, .signContainer button , .aboutUs, .createdAccount button, .purchase , .purchase button , .cartOptions, .cartProduct button, .cartOptions button, .signContainer input, .signContainer p, .productCounter button, .productCounter p {
     font-size: 0.7rem;
   }
 }
@@ -1071,6 +1132,10 @@ body::-webkit-scrollbar-thumb {
   .sign button {
     padding: 0.1rem;
     margin: 0.1rem;
+  }
+
+  .userName button{
+    padding: 0.2rem;
   }
 
   .scale img{
