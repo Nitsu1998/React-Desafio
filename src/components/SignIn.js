@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import { context } from "../context/UserContext";
 
 export default function SignIn() {
@@ -50,6 +51,7 @@ export default function SignIn() {
           </div>
           <div>
             <button type="submit">Login</button>
+            <p><Link to="/SignUp">Dont have an account?</Link></p>
           </div>
         </form>
       </div>
