@@ -585,7 +585,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .signContainer {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
   margin-top: 2rem;
   padding: 1.5rem;
@@ -912,7 +912,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .signContainer {
-    width: auto;
+    width: 60%;
   }
 
   .createdAccount {

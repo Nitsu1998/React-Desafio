@@ -10,7 +10,7 @@ import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 export default function Header() {
   
   const { user, logOut } = useContext(context);
-  const { checkout } = useContext(contextCart)
+  const { checkout, clearCart } = useContext(contextCart)
   const navigate = useNavigate()
   
   useEffect ( ()=> {
@@ -21,6 +21,11 @@ export default function Header() {
     }
     //eslint-disable-next-line
   },[user])
+
+  const logOutAccount = () => {
+    logOut();
+    clearCart();
+  }
 
   return (
       <header id="header">
@@ -40,7 +45,7 @@ export default function Header() {
             {user?.displayName !== undefined ? (
               <div className="userName">
                 {<Link to={`/User/${user.displayName}`}><h4>{user.displayName}</h4></Link>}
-                <button onClick={logOut} title="Log out"><FontAwesomeIcon icon={faRightFromBracket}/></button>
+                <button onClick={logOutAccount} title="Log out"><FontAwesomeIcon icon={faRightFromBracket}/></button>
               </div>
             ) : (
               <div>

@@ -37,8 +37,7 @@ export default function UserContextProvider({ children }) {
 
   const signIn = (email, password) => {
     signInWithEmailAndPassword(auth, email, password)
-      .then(() => {
-      })
+      .then(() => {})
       .catch((error) => {
         error.code === "auth/user-not-found"
           ? toast.error("User not found", { autoClose: 3000 })
@@ -47,34 +46,35 @@ export default function UserContextProvider({ children }) {
   };
 
   const logOut = () => {
-    signOut(auth)
+    signOut(auth);
   };
 
   const setInfo = (name) => {
     updateProfile(auth.currentUser, {
       displayName: name,
-    })
+    });
   };
 
   const deleteAccount = () => {
     deleteUser(auth.currentUser)
-    .then(() => {
+      .then(() => {
         toast.success("Account Deleted", { autoClose: 3000 });
-      }).catch(() => {
+      })
+      .catch(() => {
         toast.error("Log back in to delete account", { autoClose: 3000 });
-        logOut()
+        logOut();
       });
-  }
+  };
 
   const forgotPassword = (email) => {
     sendPasswordResetEmail(auth, email)
-    .then( () => {
-      toast.success(`An email was sent to ${email}`, { autoClose: 3000 });
-    })
-    .catch( () => {
-      toast.error("User not found", { autoClose: 3000 });
-    })
-  }
+      .then(() => {
+        toast.success(`An email was sent to ${email}`, { autoClose: 3000 });
+      })
+      .catch(() => {
+        toast.error("User not found", { autoClose: 3000 });
+      });
+  };
 
   const UserContext = {
     signUp,
@@ -86,7 +86,5 @@ export default function UserContextProvider({ children }) {
     user,
   };
 
-  return (
-      <Provider value={UserContext}>{children}</Provider>
-  );
+  return <Provider value={UserContext}>{children}</Provider>;
 }

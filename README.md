@@ -11,7 +11,7 @@ El siguiente proyecto sirve como ejemplo de desarrollo de una App web con ReactJ
 * Para la navegación de las diferentes views de la App se utilizó *react-dom-router*.
 * Como ya fue mencionado, se utilizó *Firebase* como base de datos para alojar los diferentes productos. Tambien se utilizaron las funcionalidades de *Firebase Auth* para el manejo de usuarios dentro de la App, es posible:
     * Registrarse con email, iniciar sesión y cerrar sesión cuando el usuario lo desee.
-    * Ver informacion de la cuenta creada: nombre, email, fecha de creacion.
+    * Ver informacion del usuario registrado: nombre, email, fecha de creacion, historial de compras.
     * Recuperacion de contraseña via email en la seccion *Sign In*.
     * Eliminar cuenta.
 * Diseño responsive para una correcta visualización en distintos dispositivos.
