@@ -50,10 +50,10 @@ export default function Header() {
             ) : (
               <div>
                 <Link to="/SignIn">
-                  <button>SING IN</button>
+                  <button>SIGN IN</button>
                 </Link>
                 <Link to="/SignUp">
-                  <button>SING UP</button>
+                  <button>SIGN UP</button>
                 </Link>
               </div>
             )}
