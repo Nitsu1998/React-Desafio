@@ -8,7 +8,6 @@ export default function NavBar() {
           <ul>
             <NavLink to="/Species/Human"><li>Human</li></NavLink>
             <NavLink to="/Species/Alien"><li>Alien</li></NavLink>
-            <NavLink to="/Species/Robot"><li>Robot</li></NavLink>
             <NavLink to="/Species/Humanoid"><li>Humanoid</li></NavLink>
             <NavLink to="/Species/Mythological-Creature"><li>Mythological Creature</li></NavLink> 
           </ul>
